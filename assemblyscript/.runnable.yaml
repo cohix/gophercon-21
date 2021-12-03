@@ -1,0 +1,6 @@
+name: assemblyscript
+namespace: default
+lang: assemblyscript
+version: ""
+apiVersion: 0.13.0
+fqfnUri: ""

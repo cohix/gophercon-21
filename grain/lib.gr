@@ -1,0 +1,18 @@
+import Bytes from "bytes"
+import Int32 from "int32"
+
+
+let rec factorial: Int32 -> Int32 = n => {
+  if (n == 1l) {
+    1l
+  } else {
+    Int32.mul(n, factorial(Int32.sub(n, 1l)))
+  }
+}
+
+export let run: Bytes -> Result<Bytes, (Int32, String)> = input => {
+  // let n = Bytes.getInt32(0, input)
+  factorial(5000l)
+
+  Ok(Bytes.fromString("factorial done"))
+}
